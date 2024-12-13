@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Recipe Finder</h1>
+        </header>
+
+        <!-- Add Ingredients Section -->
+        <section id="add-ingredients-section">
+            <h2>Add Ingredients</h2>
+            <button id="add-ingredient-button" class="btn">Add Ingredient</button>
+        </section>
+
+        <!-- Create Recipe Section -->
+        <section id="create-recipe-section">
+            <h2>Create Recipe</h2>
+            <button id="create-recipe-button" class="btn">Create Recipe</button>
+        </section>
+
+        <!-- Manage Ingredients and Recipes Section -->
+        <section id="manage-section">
+            <h2>Manage Ingredients and Recipes</h2>
+            <div class="btn-group">
+                <button id="manage-ingredients-button" class="btn">Manage Ingredients</button>
+                <button id="manage-recipes-button" class="btn">Manage Recipes</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Popups -->
+    <div id="ingredient-popup" class="popup">
+        <div class="popup-content">
+            <h2>Add Ingredient</h2>
+            <input type="text" id="ingredient-input" placeholder="Enter ingredient">
+            <button id="save-ingredient-button" class="btn">Save Ingredient</button>
+        </div>
+    </div>
+
+    <div id="recipe-popup" class="popup">
+        <div class="popup-content">
+            <h2>Create Recipe</h2>
+            <div id="dropdown-container">
+                <!-- Dropdowns will be dynamically added here -->
+            </div>
+            <button id="add-dropdown-button" class="btn">Add Ingredient Dropdown</button>
+            <input type="text" id="recipe-name-input" placeholder="Enter recipe name">
+            <button id="create-recipe-btn" class="btn">Create Recipe</button>
+        </div>
+    </div>
+
+    <div id="manage-ingredients-popup" class="popup">
+        <div class="popup-content">
+            <h2>Manage Ingredients</h2>
+            <ul id="ingredients-list">
+                <!-- Ingredients will be listed here with delete buttons -->
+            </ul>
+        </div>
+    </div>
+
+    <div id="manage-recipes-popup" class="popup">
+        <div class="popup-content">
+            <h2>Manage Recipes</h2>
+            <ul id="recipes-list">
+                <!-- Recipes will be listed here with delete buttons -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
